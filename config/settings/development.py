@@ -23,6 +23,14 @@ DATABASES = {
 INSTALLED_APPS += [
     "debug_toolbar",
     "apps.blog",
+    "corsheaders",
+]
+
+MIDDLEWARE += ["debug_toolbar.middleware.DebugToolbarMiddleware"]
+
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",  # ← React dev-сервер
 ]
 
 MIDDLEWARE += ["debug_toolbar.middleware.DebugToolbarMiddleware"]
