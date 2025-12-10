@@ -1,0 +1,106 @@
+# =========================
+# Python (общее)
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.wheel
+pip-log.txt
+pip-delete-this-directory.txt
+
+# виртуальные окружения
+venv/
+.venv/
+env/
+ENV/
+.ENV/
+
+# Jupyter / IPython
+.ipynb_checkpoints
+*.ipynb
+
+# mypy, pytest, coverage
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+*.cover
+.hypothesis/
+
+# =========================
+# Секреты и локальные конфиги
+# =========================
+.env
+.env.*
+!.env.example               # оставляем шаблон
+*.key
+*.pem
+secrets/
+config/local.yml
+
+# =========================
+# Логи и временные данные проекта
+# =========================
+logs/
+*.log
+data/incoming/*             # содержимое входящей папки
+data/out/*                  # выходные файлы
+data/*.csv                  # к примеру, спарсенные CSV
+!data/.gitkeep              # но оставим саму папку под контролем
+
+# =========================
+# PyCharm / IntelliJ
+# =========================
+.idea/
+*.iml
+*.iws
+out/
+.idea_modules/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+*.code-workspace
+
+# =========================
+# macOS
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# =========================
+# Windows
+# =========================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# =========================
+# Docker (если добавите)
+# =========================
+*.container
+docker-compose.override.yml
+
+# =========================
+# Служебные файлы редактора
+# =========================
+*~
+*.swp
+*.swo
+.swp/
+# Python cache
+
+
+# Django settings cache
+config/settings/__pycache__/
