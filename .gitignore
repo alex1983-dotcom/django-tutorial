@@ -29,8 +29,7 @@ frontend/build/
 frontend/.env
 
 # === Docker ===
-docker-compose.yml
-Dockerfile
+
 
 # === IDE / Editors ===
 .vscode/
